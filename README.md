@@ -69,15 +69,15 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - The Advantage of using Ansible is that it lets you quickly and efficiently download and configure  multi-tier apps without a custom code. The playbooks created will allow ansible to get the system to the state needed.  
 
 The playbook implements the following tasks:
-Install docker.io
-name: Install docker.io apt: update_cache: yes name: docker.io state: present
-Install Python-pip
-name: Install pip3 apt: force_apt_get: yes name: python3-pip state: present
-Install: docker
-name: Install Docker python module pip: name: docker state: present
-Command: sysctl -w vm.max_map_count=262144
-Launch docker container: elk
-name: download and launch a docker elk container docker_container: name: elk image: sebp/elk:761 state: started restart_policy: always published_ports: - 5601:5601 - 9200:9200 - 5044:5044
+- Install docker.io
+	-name: Install docker.io apt: update_cache: yes name: docker.io state: present
+-Install Python-pip
+	name: Install pip3 apt: force_apt_get: yes name: python3-pip state: present
+-Install: docker
+	- name: Install Docker python module pip: name: docker state: present
+- Command: sysctl -w vm.max_map_count=262144
+- Launch docker container: elk
+	-name: download and launch a docker elk container docker_container: name: elk image: sebp/elk:761 state: started restart_policy: always published_ports: - 5601:5601 - 9200:9200 - 5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -103,8 +103,8 @@ SSH into the control node and follow the steps below:
 - Update the host file to include the webserver and Elk chosen including the   private ip addresses followed by  ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, and navigate to the ELK server to check that the installation worked as expected.
 - .yml file is the playbook and it is copied into the /etc/ansible folder or /etc/ansible/roles 
- elkplaybook.yml
-filebeat-playbook.yml
-metricbeat-playbook.yml
-Updating the hosts file with the ip addresses and ansible_python_interpeter script allows ansible to run on a specific machine, for the ELK server it is the same process, only [ELK] and the ip address followed by the interpreter script. 
-Test Kibana on web : http://[your.ELK-VM.External.IP]:5601/app/kibana
+ 	- elkplaybook.yml
+	- filebeat-playbook.yml
+	- metricbeat-playbook.yml
+Updating the hosts file with the ip addresses and ansible_python_interpeter script allows ansible to run on a specific machine, for the ELK server it is the same process, only - [ELK] and the ip address followed by the interpreter script. 
+- Test Kibana on web : http://[your.ELK-VM.External.IP]:5601/app/kibana
