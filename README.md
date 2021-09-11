@@ -4,15 +4,15 @@ Cloud Security Project
 
 The files in this repository were used to configure the network depicted below.
 
- repo/Diagrams/Cloud_Secrity_Diagram.PNG
+ Diagrams/Cloud_Secrity_Diagram.PNG
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the elk-playbook.yml, filebeat-playbook.yml, metricbeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-		repo/ansible/elk-playbook.yml
-	   	repo/ansible/metricbeat-playbook.yml
-		repo/ansible/filbeat-playbook.yml
-		repo/ansible/Config-files/metricbeat-config.yml
-		repo/ansible/Config-files/filebeat-config.yml
+		ansible/elk-playbook.yml
+	   	ansible/metricbeat-playbook.yml
+		ansible/filbeat-playbook.yml
+		ansible/Config-files/metricbeat-config.yml
+		ansible/Config-files/filebeat-config.yml
 
 This document contains the following details:
 - Description of the Topology
@@ -82,7 +82,7 @@ name: download and launch a docker elk container docker_container: name: elk ima
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-repo/images/Sudo_docker_ps_screenshot.PNG
+images/Sudo_docker_ps_screenshot.PNG
 
 
 ### Target Machines & Beats
