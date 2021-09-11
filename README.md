@@ -18,8 +18,8 @@ This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
+- Beats in Use
+- Machines Being Monitored
 - How to Use the Ansible Build
 
 
@@ -32,9 +32,8 @@ Load balancing ensures that the application will be highly available , in additi
 	The jump box helps to simplify the deployment of applications and configurations across different servers. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-filebeat monitors the log files that you specify and forwards them to elasticsearch or logstash to be indexed
-
-metricbeat records the metrics and statistics 
+- filebeat monitors the log files that you specify and forwards them to elasticsearch or logstash to be indexed
+- metricbeat records the metrics and statistics 
 
 The configuration details of each machine may be found below.
 
