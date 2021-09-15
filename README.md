@@ -55,7 +55,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 
 Machines within the network can only be accessed by workstation and Jumpbox.
 -Jumpbox-provisioner-ip 10.0.0.4
-- Workstation public ip:  99.156.170.50
+- Workstation public ip
 
 A summary of the access policies in place can be found in the table below.
 
