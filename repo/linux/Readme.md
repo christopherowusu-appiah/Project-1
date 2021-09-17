@@ -4,7 +4,7 @@ Here below are a list of all the Scripts that we have created so far throughout 
 	- look up specific Ip's and return which country they originated from.
 
 - removepackges.ps1
-	- this powershell allows one to remove packages on windows after specifing which program or programs
+	- this powershell allows one to remove packages on windows after specifying which program or programs
 
 - cleanup.sh 
 	- this script will clean up certain directories and thumbnails.
@@ -19,8 +19,8 @@ Here below are a list of all the Scripts that we have created so far throughout 
 	- cleans and configures the machine to certain specifications wanted
 
 - system.sh	
-	- outputs information on memory, disk usage and space to spereate files 
+	- outputs information on memory, disk usage and space to separate files 
 
 - backup.sh
 	- creates backups in the var directory
-	
+
