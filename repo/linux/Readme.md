@@ -1,7 +1,7 @@
 Here below are a list of all the Scripts that we have created so far throughout this course as well as what they do.
 
 Ip_lookup.sh
-	- look up specific Ip's and return which country they originated from.
+- look up specific Ip's and return which country they originated from.
 
 removepackges.ps1
 	- this powershell allows one to remove packages on windows after specifing which program or programs
